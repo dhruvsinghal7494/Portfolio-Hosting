@@ -80,16 +80,34 @@
       }
       main hr {
         border: 0px;
-        background-color: white;
+        background-color: blueviolet;
         height: 1.3px;
-        margin: 0px 0 30px 36px;
+        margin: 0px 36px 30px 36px;
       }
       .secondSection {
         max-width: 80%;
         margin: auto;
+        height: 80vh;
       }
       .secondSection h1 {
         font-size: 1.5rem;
+      }
+      .text-grey{
+        font-size: 0.9em;
+        color: white;
+      }
+      .secondSection .box {
+        background-color: white;
+        height: 1.5px;
+        width: 80vw;
+        margin: 36px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
       }
     </style>
   </head>
@@ -124,7 +142,27 @@
       </section>
       <hr />
       <section class="secondSection">
+        <span class="text-grey">What I have done so far</span>
         <h1>Work Experiences</h1>
+        <div class="box">
+          <div class="vertical">
+            <div class="vert-title">
+             <a href="https://meritechsolutions.com/" type="main">Meritech Softwares Pvt. Ltd. </a> (Jan'23-Present)
+            </div>
+            <div class="vert-desc">
+              I am serving there as a <b>Software Developer</b> 
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vert-title">
+              Mathematics Tutor (Jan'21-Present)
+            </div>
+            <div class="vert-desc">
+              I am very passionate about learning Maths, so I found a way to get connected with it by teaching the IIT-JEE and CBSE Maths-Curriculum to 11-12th students. 
+            </div>
+          </div>
+          <div class="vertical"></div>
+        </div>
       </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
