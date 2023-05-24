@@ -35,6 +35,14 @@
         list-style: none;
         margin: 0 24px;
       }
+      nav ul li a{
+        color: white;
+        text-decoration: none;
+      }
+      nav ul li a:hover{
+        color: rgb(148, 148, 243);
+        font-size: 1.03rem;
+      }
       .left {
         font-size: 1.5rem;
       }
@@ -44,19 +52,22 @@
         justify-content: space-around;
         margin: 30px;
       }
-      .firstSection div {
-        background-color: red;
-      }
-      .firstSection leftSection {
-        width: 30%;
+      .leftSection {
+        margin: 120px 10px 0 28px;
+        text-align: center;
       }
       .firstSection rightSection {
-        background-color: red;
         width: 30%;
       }
       .rightSection img {
-        margin: 27px -400px 0px 100px;
-        width: 67%;
+        margin: 18px 49px 0px 61px;
+        width: 75%;
+      }
+      .leftSection i{
+        font-size: 1.8rem;
+      }
+      .purple{
+        color: rgb(155, 83, 223);
       }
     </style>
   </head>
@@ -66,11 +77,11 @@
         <div class="left">Dhruv's Portfolio</div>
         <div class="right">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact me</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact me</a></li>
           </ul>
         </div>
       </nav>
@@ -78,8 +89,11 @@
     <main>
       <section class="firstSection">
         <div class="leftSection">
-          Hi, I am Dhruv.
-          <div>I am a Web Developer.</div>
+          Hi, I am <b class="purple">Dhruv</b> and
+          <div>
+            <i> I am a Web Developer, Software Developer, Finance Enthusiast, Maths
+            Tutor. </i>
+          </div>
         </div>
         <div class="rightSection">
           <img src="bg.png" alt="Developer" />
