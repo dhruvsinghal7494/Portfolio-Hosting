@@ -35,11 +35,11 @@
         list-style: none;
         margin: 0 24px;
       }
-      nav ul li a{
+      nav ul li a {
         color: white;
         text-decoration: none;
       }
-      nav ul li a:hover{
+      nav ul li a:hover {
         color: rgb(148, 148, 243);
         font-size: 1.03rem;
       }
@@ -50,24 +50,46 @@
         font-size: 2.5rem;
         display: flex;
         justify-content: space-around;
-        margin: 30px;
+        margin: 30px 0px;
       }
       .leftSection {
-        margin: 120px 10px 0 28px;
-        text-align: center;
+        width: 120%;
+        margin: 80px 0px 0px 100px;
+        /* text-align: center; */
       }
       .firstSection rightSection {
         width: 30%;
       }
       .rightSection img {
-        margin: 18px 49px 0px 61px;
-        width: 75%;
+        /* margin: 34px -373px 0px 41px;
+        width: 75%; */
+        margin: -21px 0px 0px 264px;
+        width: 50%;
       }
-      .leftSection i{
+      .leftSection i {
         font-size: 1.8rem;
       }
-      .purple{
-        color: rgb(155, 83, 223);
+      .purple {
+        color: rgb(156, 71, 236);
+      }
+      #element {
+        color: blueviolet;
+      }
+      #element i {
+        font-size: 2rem;
+      }
+      main hr {
+        border: 0px;
+        background-color: white;
+        height: 1.3px;
+        margin: 0px 0 30px 36px;
+      }
+      .secondSection {
+        max-width: 80%;
+        margin: auto;
+      }
+      .secondSection h1 {
+        font-size: 1.5rem;
       }
     </style>
   </head>
@@ -89,16 +111,34 @@
     <main>
       <section class="firstSection">
         <div class="leftSection">
-          Hi, I am <b class="purple">Dhruv</b> and
-          <div>
-            <i> I am a Web Developer, Software Developer, Finance Enthusiast, Maths
-            Tutor. </i>
-          </div>
+          Hi, I am <span class="purple">DHRUV</span> and
+          <div>I am passionate</div>
+          <span id="element">
+            <!-- <i> I am a Web Developer, Software Developer, Finance Enthusiast, Maths
+            Tutor. </i> -->
+          </span>
         </div>
         <div class="rightSection">
-          <img src="bg.png" alt="Developer" />
+          <img src="bg2.png" alt="Developer" />
         </div>
       </section>
+      <hr />
+      <section class="secondSection">
+        <h1>Work Experiences</h1>
+      </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Web Developer,</i>",
+          "<i>Software Developer,</i>",
+          "<i>Finance Enthusiast,</i>",
+          "<i>Maths Tutor.</i>",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
